@@ -1,16 +1,11 @@
+import React from 'react'
 import './App.css'
-import Hello from './Hello'
+import Article from './Article'
 
 function App () {
   return (
-    <div className="App">
-      <header className="App-header">
-        <Hello name="Alex" />
-        <Hello name="Bernard" />
-        <Hello name="Choky" />
-        <Hello name="Diane" />
-        <Hello name="Ervand" />
-      </header>
+    <div className='App'>
+      <Article userLogin='sudah login' />
     </div>
   )
 }
