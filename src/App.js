@@ -1,13 +1,14 @@
 import React from 'react'
 import './App.css'
-// import Rendering from './Rendering'
-import Conditional from './Conditional'
+import List from './List'
+import Table from './Table'
+import users from './User'
 
 function App () {
   return (
-    <div className='App'>
-      {/* <Rendering /> */}
-      <Conditional />
+    <div >
+     {/* <List users={users}/> */}
+     <Table users={users}/>
     </div>
   )
 }
