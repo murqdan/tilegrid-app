@@ -1,11 +1,13 @@
 import React from 'react'
 import './App.css'
-import Article from './Article'
+// import Rendering from './Rendering'
+import Conditional from './Conditional'
 
 function App () {
   return (
     <div className='App'>
-      <Article userLogin='sudah login' />
+      {/* <Rendering /> */}
+      <Conditional />
     </div>
   )
 }
