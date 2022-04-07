@@ -1,27 +1,12 @@
-/*
-function Hello (props) {
-  return `Hello ${props.name}!`
-}
-*/
+// import ReactJS karena kita menggunakan format JSX
+// eslint-disable-next-line no-unused-vars
+import * as React from 'react'
 
-/*
-function Hello (props) {
-  const { name } = props
-  return `Hello ${name}!`
-}
-*/
-
-/*
-function Hello ({ name }) {
-  return `Hello ${name}!`
-}
-*/
-
-function Hello ({ name, gretting }) {
-  return `Hello ${name}, ${gretting}!`
+// eslint-disable-next-line react/prop-types
+const Hello = ({ name }) => {
+  return <div>Hello {name}!</div>
 }
 
-// nilai default pada props
 Hello.defaultProps = {
   name: 'anonim'
 }
