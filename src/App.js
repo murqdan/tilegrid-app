@@ -1,11 +1,14 @@
 import React from 'react'
 import './App.css'
-import AllEvent from './AllEvent'
+import BlueButton from './BlueButton'
 
 function App () {
+  function info () {
+    alert('Lorem ipsum sit dolor amet')
+  }
   return (
-    <div >
-     <AllEvent />
+    <div className='App'>
+      <BlueButton onCustomClick={info} caption='Tampilkan Info' />
     </div>
   )
 }
