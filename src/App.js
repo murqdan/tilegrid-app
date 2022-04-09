@@ -1,9 +1,9 @@
-import FormBasicValidation from './FormBasicValidation'
+import Button from './Button'
 
 function App () {
   return (
     <div>
-      <FormBasicValidation />
+      <Button title='Submit!' onClick={(e) => e} />
     </div>
   )
 }
