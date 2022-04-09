@@ -1,0 +1,10 @@
+.default {
+  border: 1px solid rgb(230, 7, 7);
+  background-color: rgb(28, 192, 69);
+  padding: 5px 10px;
+  text-align: center;
+}
+
+.default:hover {
+  background-color: #fff;
+}

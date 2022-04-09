@@ -1,9 +1,9 @@
-import StyleSheet from './StyleSheet'
+import Button from './Button'
 
 function App () {
   return (
     <div>
-      <StyleSheet/>
+      <Button props='test'/>
     </div>
   )
 }

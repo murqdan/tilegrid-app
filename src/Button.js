@@ -1,17 +1,9 @@
-import * as React from 'react'
-import PropTypes from 'prop-types'
+import style from './Button.module.css'
 
-function Button ({ title, onClick }) {
-  return (
-    <button onClick={onClick}>
-      {title}
-    </button>
-  )
-}
-
-Button.propTypes = {
-  title: PropTypes.string.isRequired,
-  onClick: PropTypes.func.isRequired
+const Button = ({ props }) => {
+  return <button className={style.default}>
+    {props}
+  </button>
 }
 
 export default Button
