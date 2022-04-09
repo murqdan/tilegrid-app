@@ -1,9 +1,9 @@
-import Button from './Button'
+import InlineStyle from './InlineStyle'
 
 function App () {
   return (
     <div>
-      <Button title='Submit!' onClick={(e) => e} />
+      <InlineStyle />
     </div>
   )
 }
