@@ -1,10 +1,9 @@
-import './App.css'
-import FormMultiple from './FormMultiple'
+import FormBasicValidation from './FormBasicValidation'
 
 function App () {
   return (
-    <div className='App'>
-      <FormMultiple />
+    <div>
+      <FormBasicValidation />
     </div>
   )
 }
