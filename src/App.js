@@ -1,9 +1,9 @@
-import InlineStyle from './InlineStyle'
+import StyleSheet from './StyleSheet'
 
 function App () {
   return (
     <div>
-      <InlineStyle />
+      <StyleSheet/>
     </div>
   )
 }
