@@ -1,16 +1,20 @@
-import style from './Button.module.scss'
+import { useState } from 'react'
 import PropTypes from 'prop-types'
 
-const Button = ({ props }) => {
+const Button = ({ text }) => {
+  const [counter, setCounter] = useState(0)
+
+  const handleClick = () => setCounter(c => c + 1)
+
   return (
-    <button className={style.default}>
-      {props}
+    <button onClick={handleClick}>
+      {text} {counter}
     </button>
   )
 }
 
 Button.propTypes = {
-  props: PropTypes.string
+  text: PropTypes.string
 }
 
 export default Button
