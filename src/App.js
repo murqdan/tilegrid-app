@@ -1,9 +1,9 @@
-import Editing from './Editing'
+import CleanupChat from './CleanupChat'
 
 function App () {
   return (
     <div>
-      <Editing />
+      <CleanupChat />
     </div>
   )
 }
