@@ -1,9 +1,9 @@
-import Button from './Button'
+import Editing from './Editing'
 
 function App () {
   return (
     <div>
-      <Button text='test' />
+      <Editing />
     </div>
   )
 }
