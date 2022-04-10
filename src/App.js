@@ -1,9 +1,9 @@
-import CleanupChat from './CleanupChat'
+import Component from './Component'
 
 function App () {
   return (
     <div>
-      <CleanupChat />
+      <Componen />
     </div>
   )
 }
