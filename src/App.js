@@ -1,9 +1,9 @@
-import Component from './Component'
+import TimeElapsed from './TimeElapsed'
 
 function App () {
   return (
     <div>
-      <Componen />
+      <TimeElapsed />
     </div>
   )
 }
