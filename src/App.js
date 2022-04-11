@@ -1,9 +1,9 @@
-import TimeElapsed from './TimeElapsed'
+import Komponenku from './Komponenku'
 
 function App () {
   return (
     <div>
-      <TimeElapsed />
+      <Komponenku />
     </div>
   )
 }
