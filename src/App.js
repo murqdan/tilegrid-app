@@ -3,7 +3,7 @@ import Komponenku from './Komponenku'
 function App () {
   return (
     <div>
-      <Komponenku />
+      <Komponenku wilayah='bali'/>
     </div>
   )
 }

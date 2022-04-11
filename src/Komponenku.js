@@ -1,13 +1,17 @@
-import { useState, useEffect, useCallback } from 'react'
+import { useState, useEffect, useMemo } from 'react'
 
-const Komponenku = props => {
-  const [menu, setMenu] = useState([])
+const Komponenku = ({ wilayah }) => {
+  let [menu, setMenu] = useState([])
 
-  // ------------------------
-  const fetchMenu = useCallback(() => {
+  const fetchMenu = function () {
     return ['nasi padang', 'nasi uduk', 'nasi gudeg']
-  }, [])
-  // ------------------------
+  }
+
+  menu = useMemo(() => {
+    if (wilayah === 'bali') return ['ayam betutu']
+
+    return fetchMenu()
+  }, [wilayah])
 
   useEffect(() => {
     const data = fetchMenu()
