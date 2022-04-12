@@ -1,9 +1,9 @@
-import { AppBelajarContext } from './AppBelajarContext'
+import BelajarCustomHook from './BelajarCustomHook'
 
 function App () {
   return (
     <div>
-      <AppBelajarContext />
+      <BelajarCustomHook />
     </div>
   )
 }
