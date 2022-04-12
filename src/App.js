@@ -1,9 +1,9 @@
-import TodoComponent from './TodoComponent'
+import { AppBelajarContext } from './AppBelajarContext'
 
 function App () {
   return (
     <div>
-      <TodoComponent />
+      <AppBelajarContext />
     </div>
   )
 }
