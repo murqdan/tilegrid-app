@@ -1,9 +1,9 @@
-import CounterComponent from './CounterComponent'
+import TodoComponent from './TodoComponent'
 
 function App () {
   return (
     <div>
-      <CounterComponent />
+      <TodoComponent />
     </div>
   )
 }
