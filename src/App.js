@@ -1,9 +1,9 @@
-import Komponenku from './Komponenku'
+import CounterComponent from './CounterComponent'
 
 function App () {
   return (
     <div>
-      <Komponenku wilayah='bali'/>
+      <CounterComponent />
     </div>
   )
 }
