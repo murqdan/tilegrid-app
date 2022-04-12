@@ -1,5 +1,3 @@
-import * as React from 'react'
-
 const Conditional = () => {
   const isLogin = true
   const userName = 'Alex'
