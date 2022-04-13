@@ -1,16 +1,23 @@
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route, NavLink, Navigate } from 'react-router-dom'
+import Home from './pages/Home'
+import About from './pages/About'
 import './App.css'
-
-const Home = () => <h2>Halaman Home</h2>
-const About = () => <h2>Halaman About</h2>
 
 function App () {
   return (
-    <div className="App App-header">
-      <Routes>
-        <Route path="/" element={<Home/>}/>
-        <Route path="/about" element={<About/>}/>
-      </Routes>
+    <div className="App">
+      <ul className='menu'>
+        <li><NavLink to="/" activeClassName="active" exact>Home</NavLink></li>
+        <li><NavLink to="/about" activeClassName="active">About</NavLink></li>
+        <li><NavLink to="/member" activeClassName="active">Member</NavLink></li>
+      </ul>
+      <div className="main">
+        <Routes>
+          <Route path="/" element={<Home/>}/>
+          <Route path="/about" element={<About/>}/>
+          <Route path="/member" element={ <Navigate to="/"/>}/>
+        </Routes>
+      </div>
     </div>
   )
 }
