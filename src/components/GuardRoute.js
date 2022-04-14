@@ -10,7 +10,7 @@ const GuardRoute = ({ children, isLogin, ...rest }) => {
 }
 
 GuardRoute.propTypes = {
-  children: PropTypes.elementType,
+  children: PropTypes.element,
   isLogin: PropTypes.bool
 }
 
