@@ -10,6 +10,7 @@ const Foods = React.lazy(() => import('./pages/Foods'))
 const About = React.lazy(() => import('./pages/About'))
 const Post = React.lazy(() => import('./pages/Post'))
 const Home = React.lazy(() => import('./pages/Home'))
+const Notfound = React.lazy(() => import('./pages/Notfound'))
 
 function App () {
   const [isLogin, setLogin] = React.useState(false)
@@ -47,6 +48,7 @@ function App () {
               <Route path="drinks" element={<Drinks />} />
             </Route>
             <Route path="/post/:id" element={<Post/>}/>
+            <Route path="*" element={<Notfound/>}/>
           </Routes>
         </div>
       </div>
