@@ -16,4 +16,3 @@ function Post () {
 }
 
 export default Post
-git commit -m '(routing aplikasi) fungsi usehistory'
