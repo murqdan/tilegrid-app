@@ -10,9 +10,9 @@ export default function Grid () {
 
   return (
     <div>
-        <div style={{ maxWidth: 400, overflow: 'hidden' }}>
+        <div style={{ maxWidth: 350, overflow: 'hidden' }}>
          {gridTiles.map((tile, index) => {
-           return <Tile {...tile} key={index}/>
+           return <Tile {...tile} key={index} onDoubleClick={e => dispatch({ type: 'REMOVE_TILE', id: tile.id })}/>
          })}
         </div>
         <br/>
@@ -21,8 +21,8 @@ export default function Grid () {
             return <AddTileButton
                 key={color}
                 color={color}
-                onClick={_ => dispatch({ type: 'ADD_TILE', color })}
-                />
+                onClick={e => dispatch({ type: 'ADD_TILE', color })}
+              />
           })}
         </div>
     </div>
