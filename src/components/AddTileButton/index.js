@@ -10,7 +10,7 @@ export default function AddTileButton ({ onClick, color }) {
     border: '1px solid black'
   }
   return (
-    <div style={buttonStyles}/>
+    <div style={buttonStyles} onClick={onClick}/>
   )
 }
 
