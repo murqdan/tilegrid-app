@@ -1,6 +1,6 @@
 const initialState = []
 
-function reducer (state = initialState, action) {
+function gridReducer (state = initialState, action) {
   switch (action.type) {
     case 'ADD_TILE': {
       const nextId = state.length + 1
@@ -14,4 +14,4 @@ function reducer (state = initialState, action) {
   }
 }
 
-export default reducer
+export default gridReducer
