@@ -17,8 +17,10 @@ export function removeTile (id) {
 
 export function addTileWithChecking (color) {
   return function (dispatch, getState) {
-    if (getState().grid.length < 4) {
+    if (getState().grid.length < 5) {
       dispatch(addTile(color))
+    } else {
+      alert('Has reached the maximum to add tiles!')
     }
   }
 }
