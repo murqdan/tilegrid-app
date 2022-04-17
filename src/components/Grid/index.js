@@ -1,7 +1,7 @@
 import { useSelector, useDispatch } from 'react-redux'
 import AddTileButton from '../AddTileButton'
 import Tile from '../Tile'
-import { addTile, removeTile } from '../features/Grid/actions'
+import { addTile, removeTile } from '../../features/Grid/actions'
 
 const colors = ['red', 'blue', 'pink', 'yellow', 'gray']
 
